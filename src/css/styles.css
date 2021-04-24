@@ -1,0 +1,46 @@
+
+.cartas{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 0.1em;
+    row-gap: 1em;
+}
+
+.carta img{
+    width: auto;
+    height: 150px;
+}
+
+table{
+    border-style: solid;
+    border-color: black;
+}
+
+footer{
+    padding-top: 20px;
+}
+footer p{
+    text-align: center;
+}
+
+.formulario{
+    border-style: solid;
+    border-color: black;
+}
+
+form{
+    padding: 15px;
+}
+
+
+
+@media (max-width: 520px){
+    .cartas{ 
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+.carta img:hover{
+    box-shadow: cadetblue;
+}
