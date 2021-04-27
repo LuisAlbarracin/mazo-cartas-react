@@ -1,7 +1,16 @@
 import React from "react";
-import Table from 'react-bootstrap/Table';
+import Table from "react-bootstrap/Table";
+import './tabla.css';
 
 class Tabla extends React.Component {
+
+  traerDatos = () => {
+    const datos = JSON.parse(localStorage.getItem('cartas'))
+
+    localStorage.setItem("cartas", JSON.stringify(datos));
+
+  }
+
   render() {
     return (
       <Table striped bordered hover size="sm">
@@ -13,16 +22,6 @@ class Tabla extends React.Component {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1</td>
-            <td>Mark</td>
-            <td>Otto</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-          </tr>
         </tbody>
       </Table>
     );

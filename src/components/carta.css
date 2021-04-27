@@ -1,0 +1,9 @@
+.Carta img{
+    width: auto;
+    height: 150px;
+}
+
+.Carta img:hover{
+    box-shadow: cadetblue;
+    cursor: pointer;
+}

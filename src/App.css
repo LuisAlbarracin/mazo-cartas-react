@@ -7,6 +7,23 @@
   pointer-events: none;
 }
 
+.Cartas{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 0.1em;
+  row-gap: 1em;
+}
+
+
+
+@media (max-width: 520px){
+  .Cartas{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

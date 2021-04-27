@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from 'react-bootstrap/Navbar';
-
+import './header.css';
 class Header extends React.Component {
   render() {
     return (
@@ -9,11 +9,10 @@ class Header extends React.Component {
           <img
             src = "./img/logo.png"
             alt = "Logo"
-            width="30"
-            height="30"
+            width="200"
+            height="50"
             className="d-inline-block align-top"
           />
-          POKER
         </Navbar.Brand>
       </Navbar>
     );
